@@ -20,7 +20,7 @@ public class CellData : ScriptableObject
     [SerializeField]
     private float _rotateSpeed;
     [SerializeField]
-    private float _viewRadius;
+    private float _damage;
     [SerializeField]
     private float _physicalResist;
     [SerializeField]
@@ -32,6 +32,8 @@ public class CellData : ScriptableObject
     [SerializeField]
     private float _fireResist;
     [SerializeField]
+    private float _viewRadius;
+    [SerializeField]
     private int _sizeLevel;
 
     public IReadOnlyList<AbilitySocket> Sockets => _sockets;
@@ -42,11 +44,12 @@ public class CellData : ScriptableObject
     public float EnergyRecoveryCooldown => _energyRecoveryCooldown;
     public float Speed => _speed;
     public float RotateSpeed => _rotateSpeed;
-    public float ViewRadius => _viewRadius;
+    public float Damage => _damage;
     public float PhysicalResist =>_physicalResist;
     public float PoisonResist => _poisonResist;
     public float ElectricityResist => _electricityResist;
     public float ColdResist => _coldResist;
     public float FireResist => _fireResist;
+    public float ViewRadius => _viewRadius;
     public int SizeLevel => _sizeLevel;
 }

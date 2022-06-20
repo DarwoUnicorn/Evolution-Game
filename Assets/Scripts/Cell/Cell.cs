@@ -4,7 +4,7 @@ using UnityEngine;
 public class Cell : MonoBehaviour
 {
     [SerializeField]
-    private CellData _data;
+    private CellCharacteristics _characteristics;
     [SerializeField]
     private List<AbilitySocket> _sockets;
     [SerializeField]
@@ -12,20 +12,16 @@ public class Cell : MonoBehaviour
     [SerializeField]
     private List<Effect> _effects;
     [SerializeField]
-    private Upgrade _upgrade;
-    [SerializeField]
     private MovementController _controller;
-    [SerializeField]
-    private float _hp;
-    [SerializeField]
-    private float _energy;
 
-    public CellData Data => _data;
+    public CellCharacteristics Characteristics => _characteristics;
     public IReadOnlyList<AbilitySocket> Sockets => _sockets;
     public IReadOnlyList<Mutation> Mutations => _mutations;
     public IReadOnlyList<Effect> Effects => _effects;
-    public Upgrade Upgrade => _upgrade;
     public MovementController Controller => _controller;
-    public float Hp => _hp;
-    public float Energy => _energy;
+
+    public void ApplyEffect(Effect effect)
+    {
+
+    }
 }
