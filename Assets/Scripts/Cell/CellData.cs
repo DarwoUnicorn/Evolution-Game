@@ -1,8 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "CellData", menuName = "Cell/CellData", order = 1)]
 public class CellData : ScriptableObject
 {
+    [SerializeField]
+    private UpgradeData _upgradeData;
     [SerializeField]
     private List<AbilitySocket> _sockets = new List<AbilitySocket>();
     [SerializeField]
@@ -36,6 +39,7 @@ public class CellData : ScriptableObject
     [SerializeField]
     private int _sizeLevel;
 
+    public UpgradeData UpgradeData => _upgradeData;
     public IReadOnlyList<AbilitySocket> Sockets => _sockets;
     public IReadOnlyList<CellData> Friends => _friends;
     public float MaxHp => _maxHp;

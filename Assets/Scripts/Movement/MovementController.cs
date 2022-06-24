@@ -1,8 +1,6 @@
 using UnityEngine;
-
-public class MovementController : MonoBehaviour
+public abstract class MovementController : MonoBehaviour
 {
     [SerializeField]
-    private CellData _data;
-    
+    protected Movement _movement;
 }
