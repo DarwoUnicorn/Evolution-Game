@@ -16,6 +16,10 @@ public class UpgradeData : ScriptableObject
     [SerializeField]
     private float _rotateSpeed;
     [SerializeField]
+    private float _acceleration;
+    [SerializeField]
+    private float _deceleration;
+    [SerializeField]
     private float _damage;
     [SerializeField]
     private float _resist;
@@ -26,6 +30,8 @@ public class UpgradeData : ScriptableObject
     public float EnergyRecoveryCooldown => _energyRecoveryCooldown;
     public float Speed => _speed;
     public float RotateSpeed => _rotateSpeed;
+    public float Acceleration => _acceleration;
+    public float Deceleration => _deceleration;
     public float Damage => _damage;
     public float Resist => _resist;
 }

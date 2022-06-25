@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class CharacteristicsCoefficient
 {
     private float _maxHp = 1;
@@ -8,6 +6,8 @@ public class CharacteristicsCoefficient
     private float _energyRecoveryCooldown = 1;
     private float _speed = 1;
     private float _rotateSpeed = 1;
+    private float _acceleration = 1;
+    private float _deceleration = 1;
     private float _damage = 1;
     private float _physicalResist = 1;
     private float _poisonResist = 1;
@@ -22,6 +22,8 @@ public class CharacteristicsCoefficient
     public float EnergyRecoveryCooldown => _energyRecoveryCooldown;
     public float Speed => _speed;
     public float RotateSpeed => _rotateSpeed;
+    public float Acceleration => _acceleration;
+    public float Deceleration => _deceleration;
     public float Damage => _damage;
     public float PhysicalResist =>_physicalResist;
     public float PoisonResist => _poisonResist;

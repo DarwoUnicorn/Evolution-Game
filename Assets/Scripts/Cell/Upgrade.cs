@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Upgrade
 {
     private UpgradeData _data;
@@ -10,12 +8,23 @@ public class Upgrade
     private int _damageLevel;
     private int _resistLevel;
     
+    public Upgrade(UpgradeData data)
+    {
+        if(data == null)
+        {
+            throw new System.ArgumentNullException("data");
+        }
+        _data = data;
+    }
+
     public float MaxHp => _hpLevel * _data.MaxHp + _cellLevel * 0.2f * _data.MaxHp;
     public float MaxEnergy => _energyLevel * _data.MaxEnergy + _cellLevel * 0.2f * _data.MaxEnergy;
     public float EnergyRecoverySpeed => _energyLevel * _data.EnergyRecoverySpeed;
     public float EnergyRecoveryCooldown => _energyLevel * _data.EnergyRecoveryCooldown;
     public float Speed => _speedLevel * _data.Speed + _cellLevel * 0.2f * _data.Speed;
     public float RotateSpeed => _speedLevel * _data.RotateSpeed;
+    public float Acceleration => _speedLevel * _data.Acceleration;
+    public float Deceleration => _speedLevel * _data.Deceleration;
     public float Damage => _damageLevel * _data.Damage + _cellLevel * 0.2f * _data.Damage;
     public float Resist => _resistLevel * _data.Resist + _cellLevel * 0.2f * _data.Resist;
 

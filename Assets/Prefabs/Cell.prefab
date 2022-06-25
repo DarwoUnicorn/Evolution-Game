@@ -9,6 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5340204901602501604}
+  - component: {fileID: 5366422198139960584}
+  - component: {fileID: 3790403458782933001}
+  - component: {fileID: 414327745308711697}
   m_Layer: 0
   m_Name: Cell
   m_TagString: Untagged
@@ -32,6 +35,57 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &5366422198139960584
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750021604830153260}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &3790403458782933001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750021604830153260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6ab0d5a3b8c25f47bf58e832277f11c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cell: {fileID: 414327745308711697}
+  _rigidbody: {fileID: 5366422198139960584}
+--- !u!114 &414327745308711697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5750021604830153260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3aef34d08fe4ce43bbfb5b8969870b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data: {fileID: 0}
+  _sockets: []
+  _mutations: []
+  _movement: {fileID: 3790403458782933001}
 --- !u!1001 &7618028665750769632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85,7 +139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: af3997e4875278d409597bb2a381873f, type: 3}
       propertyPath: m_Name
-      value: untitled
+      value: Model
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af3997e4875278d409597bb2a381873f, type: 3}

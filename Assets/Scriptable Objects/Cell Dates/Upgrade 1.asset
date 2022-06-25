@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6e8fb5da65cb4cc499577d9b36343c86, type: 3}
-  m_Name: UpgradeData
+  m_Name: Upgrade 1
   m_EditorClassIdentifier: 
-  _maxHp: 0
-  _maxEnergy: 0
-  _energyRecoverySpeed: 0
-  _energyRecoveryCooldown: 0
-  _speed: 0
-  _rotateSpeed: 0
-  _damage: 0
-  _resist: 0
+  _maxHp: 10
+  _maxEnergy: 10
+  _energyRecoverySpeed: 10
+  _energyRecoveryCooldown: 0.2
+  _speed: 1
+  _rotateSpeed: 5
+  _acceleration: 0.1
+  _deceleration: 0.1
+  _damage: 5
+  _resist: 2

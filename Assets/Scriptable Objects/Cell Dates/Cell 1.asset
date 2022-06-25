@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee21a0ce1cd250d43b384648fe0ec0c9, type: 3}
+  m_Name: Cell 1
+  m_EditorClassIdentifier: 
+  _upgradeData: {fileID: 11400000, guid: c080da9509a5404448542e0985041f17, type: 2}
+  _sockets: []
+  _friends: []
+  _maxHp: 100
+  _maxEnergy: 100
+  _energyRecoverySpeed: 20
+  _energyRecoveryCooldown: 2
+  _speed: 5
+  _rotateSpeed: 270
+  _acceleration: 3
+  _deceleration: 1
+  _damage: 20
+  _physicalResist: 10
+  _poisonResist: 10
+  _electricityResist: 10
+  _coldResist: 10
+  _fireResist: 10
+  _viewRadius: 30
+  _sizeLevel: 1
