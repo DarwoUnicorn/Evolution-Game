@@ -2,7 +2,7 @@ public class Characteristics
 {
     private readonly CellData _data;
     private Upgrade _upgrade;
-    private CharacteristicsCoefficient _coefficients = new CharacteristicsCoefficient();
+    private CharacteristicsCoefficient _coefficients;
     private float _hp;
     private float _energy;
 
@@ -13,6 +13,9 @@ public class Characteristics
             throw new System.ArgumentNullException("data");
         }
         _data = data;
+        _hp =_data.MaxHp;
+        _energy = _data.MaxEnergy;
+        _coefficients = new CharacteristicsCoefficient();
         _upgrade = new Upgrade(data.UpgradeData);
     }
 

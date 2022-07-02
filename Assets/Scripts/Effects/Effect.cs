@@ -1,10 +1,15 @@
 public abstract class Effect
 {
-    public EffectTermination Termination { get; private set; }
     private CharacteristicsCoefficient _coefficients;
+    
+    public EffectTermination Termination { get; private set; }
 
     public Effect(EffectTermination termination)
     {
+        if(termination == null)
+        {
+            throw new System.ArgumentNullException("termination");
+        }
         Termination = termination;
     }
 

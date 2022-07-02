@@ -22,12 +22,20 @@ public class Cell : MonoBehaviour
 
     public void SetData(CellData data)
     {
+        if(data == null)
+        {
+            throw new System.ArgumentNullException("data");
+        }
         _data = data;
         Characteristics = new Characteristics(data);
     }
 
     public void ApplyEffect(Effect effect)
     {
+        if(effect == null)
+        {
+            throw new System.ArgumentNullException("effect");
+        }
         Characteristics.ApplyEffect(effect);
     }
 

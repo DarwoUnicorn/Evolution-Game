@@ -7,7 +7,9 @@ public class Upgrade
     private int _speedLevel;
     private int _damageLevel;
     private int _resistLevel;
-    
+    private int _maxCellLevel;
+    private int _maxCharacteristicsLevel;
+
     public Upgrade(UpgradeData data)
     {
         if(data == null)
@@ -28,8 +30,47 @@ public class Upgrade
     public float Damage => _damageLevel * _data.Damage + _cellLevel * 0.2f * _data.Damage;
     public float Resist => _resistLevel * _data.Resist + _cellLevel * 0.2f * _data.Resist;
 
-    public void SetData(UpgradeData data)
+    public void SetCellLevel(int level)
     {
-        _data = data;
+        CheckLevel(level, _maxCellLevel);
+        _cellLevel = level;
+    }
+
+    public void SetHpLevel(int level)
+    {
+        CheckLevel(level, _maxCharacteristicsLevel);
+        _hpLevel = level;
+    }
+
+    public void SetEnergyLevel(int level)
+    {
+        CheckLevel(level, _maxCharacteristicsLevel);
+        _energyLevel = level;
+    }
+
+    public void SetSpeedLevel(int level)
+    {
+        CheckLevel(level, _maxCharacteristicsLevel);
+        _speedLevel = level;
+    }
+
+    public void SetDamageLevel(int level)
+    {
+        CheckLevel(level, _maxCharacteristicsLevel);
+        _damageLevel = level;
+    }
+
+    public void SetResistLevel(int level)
+    {
+        CheckLevel(level, _maxCharacteristicsLevel);
+        _resistLevel = level;
+    }
+
+    private void CheckLevel(int level, int maxLevel)
+    {
+        if(level > maxLevel)
+        {
+            throw new System.ArgumentException("Cell level cannat be higher than 10");
+        }
     }
 }
