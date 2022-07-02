@@ -34,4 +34,9 @@ public class Characteristics
     public int SizeLevel => _data.SizeLevel;
     public float Hp => _hp;
     public float Energy => _energy;
+
+    public void ApplyEffect(Effect effect)
+    {
+        effect.Apply(_coefficients);
+    }
 }

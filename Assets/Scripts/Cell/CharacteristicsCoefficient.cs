@@ -1,34 +1,18 @@
 public class CharacteristicsCoefficient
 {
-    private float _maxHp = 1;
-    private float _maxEnergy = 1;
-    private float _energyRecoverySpeed = 1;
-    private float _energyRecoveryCooldown = 1;
-    private float _speed = 1;
-    private float _rotateSpeed = 1;
-    private float _acceleration = 1;
-    private float _deceleration = 1;
-    private float _damage = 1;
-    private float _physicalResist = 1;
-    private float _poisonResist = 1;
-    private float _electricityResist = 1;
-    private float _coldResist = 1;
-    private float _fireResist = 1;
-    private float _viewRadius = 1;
-
-    public float MaxHp => _maxHp;
-    public float MaxEnergy => _maxEnergy;
-    public float EnergyRecoverySpeed => _energyRecoverySpeed;
-    public float EnergyRecoveryCooldown => _energyRecoveryCooldown;
-    public float Speed => _speed;
-    public float RotateSpeed => _rotateSpeed;
-    public float Acceleration => _acceleration;
-    public float Deceleration => _deceleration;
-    public float Damage => _damage;
-    public float PhysicalResist =>_physicalResist;
-    public float PoisonResist => _poisonResist;
-    public float ElectricityResist => _electricityResist;
-    public float ColdResist => _coldResist;
-    public float FireResist => _fireResist;
-    public float ViewRadius => _viewRadius;
+    public float MaxHp = 1;
+    public float MaxEnergy = 1;
+    public float EnergyRecoverySpeed = 1;
+    public float EnergyRecoveryCooldown = 1;
+    public float Speed = 1;
+    public float RotateSpeed = 1;
+    public float Acceleration = 1;
+    public float Deceleration = 1;
+    public float Damage = 1;
+    public float PhysicalResist = 1;
+    public float PoisonResist = 1;
+    public float ElectricityResist = 1;
+    public float ColdResist = 1;
+    public float FireResist = 1;
+    public float ViewRadius = 1;
 }
