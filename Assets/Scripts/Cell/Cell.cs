@@ -11,22 +11,33 @@ public class Cell : MonoBehaviour
     private List<Mutation> _mutations;
     [SerializeField]
     private Movement _movement;
+    [SerializeField]
+    private Rigidbody2D _rigidbody;
 
-    private List<Effect> _effects => new List<Effect>();
+    private List<Effect> _effects;
 
     public Characteristics Characteristics { get; private set; }
     public IReadOnlyList<AbilitySocket> Sockets => _sockets;
     public IReadOnlyList<Mutation> Mutations => _mutations;
     public IReadOnlyList<Effect> Effects => _effects;
     public Movement Movement => _movement;
+    public Rigidbody2D Rigidbody => _rigidbody;
 
     public void SetData(CellData data)
     {
         if(data == null)
         {
-            throw new System.ArgumentNullException("data");
+            throw new System.ArgumentNullException("CellData");
         }
         _data = data;
+        _effects?.ForEach(item => item.Cancel());
+        _effects = new List<Effect>();
+        _mutations = new List<Mutation>();
+        _sockets = new List<AbilitySocket>();
+        for(int i = 0; i < _data.Sockets.Count; i++)
+        {
+            _sockets.Add(new AbilitySocket(_data.Sockets[i], 0));
+        }
         Characteristics = new Characteristics(data);
     }
 
@@ -34,12 +45,12 @@ public class Cell : MonoBehaviour
     {
         if(effect == null)
         {
-            throw new System.ArgumentNullException("effect");
+            throw new System.ArgumentNullException("Effect");
         }
         Characteristics.ApplyEffect(effect);
     }
 
-    public void Update()
+    private void Update()
     {
         for(int i = 0; i < _effects.Count; i++)
         {

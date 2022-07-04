@@ -7,7 +7,7 @@ public class CellData : ScriptableObject
     [SerializeField]
     private UpgradeData _upgradeData;
     [SerializeField]
-    private List<AbilitySocket> _sockets = new List<AbilitySocket>();
+    private List<AbilityType> _sockets = new List<AbilityType>();
     [SerializeField]
     private List<CellData> _friends = new List<CellData>();
     [SerializeField]
@@ -44,7 +44,7 @@ public class CellData : ScriptableObject
     private int _sizeLevel;
 
     public UpgradeData UpgradeData => _upgradeData;
-    public IReadOnlyList<AbilitySocket> Sockets => _sockets;
+    public IReadOnlyList<AbilityType> Sockets => _sockets;
     public IReadOnlyList<CellData> Friends => _friends;
     public float MaxHp => _maxHp;
     public float MaxEnergy => _maxEnergy;

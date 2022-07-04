@@ -4,13 +4,13 @@ public class Movement : MonoBehaviour
 {
     [SerializeField]
     private Cell _cell;
-    [SerializeField]
-    private Rigidbody2D _rigidbody;
 
     private Vector2 _moveDirection;
     private float _rotateAngle;
     private float _multiplier;
 
+    private Rigidbody2D _rigidbody => _cell.Rigidbody;
+    
     public void SetVelocity(Vector2 direction, float multiplier = 1)
     {
         _moveDirection = direction;

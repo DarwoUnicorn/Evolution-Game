@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Cell 1
   m_EditorClassIdentifier: 
   _upgradeData: {fileID: 11400000, guid: c080da9509a5404448542e0985041f17, type: 2}
-  _sockets: []
+  _sockets: 01000000020000000300000000000000
   _friends: []
   _maxHp: 100
   _maxEnergy: 100
@@ -22,7 +22,7 @@ MonoBehaviour:
   _speed: 5
   _rotateSpeed: 270
   _acceleration: 3
-  _deceleration: 1
+  _deceleration: 2
   _damage: 20
   _physicalResist: 10
   _poisonResist: 10

@@ -10,7 +10,7 @@ public class Characteristics
     {
         if(data == null)
         {
-            throw new System.ArgumentNullException("data");
+            throw new System.ArgumentNullException("CellData");
         }
         _data = data;
         _hp =_data.MaxHp;

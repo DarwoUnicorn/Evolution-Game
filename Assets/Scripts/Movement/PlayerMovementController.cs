@@ -21,13 +21,13 @@ public class PlayerMovementController : MovementController, IInitializePotential
         {
             multiplier = 1;
         }
-        _movement.SetVelocity(direction.normalized, multiplier);
-        _movement.SetRotation(direction);
+        Movement.SetVelocity(direction.normalized, multiplier);
+        Movement.SetRotation(direction);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        _movement.SetVelocity(Vector2.zero);
-        _movement.StopRotate();
+        Movement.SetVelocity(Vector2.zero);
+        Movement.StopRotate();
     }
 }

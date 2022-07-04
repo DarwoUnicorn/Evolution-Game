@@ -14,7 +14,7 @@ public class Upgrade
     {
         if(data == null)
         {
-            throw new System.ArgumentNullException("data");
+            throw new System.ArgumentNullException("UpgradeData");
         }
         _data = data;
     }
