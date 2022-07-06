@@ -9,6 +9,6 @@ public class PlayButton : Button
 
     public override void OnClick()
     {
-        _player.SetData();
+        // _player.SetData();
     }
 }
