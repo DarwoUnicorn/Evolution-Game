@@ -22,8 +22,8 @@ public class DataSaver : MonoBehaviour
         if(File.Exists(_path))
         {
             _persistentData = JsonUtility.FromJson<PersistentData>(File.ReadAllText(_path));
-            DataLoaded?.Invoke(_persistentData);
         }
+        DataLoaded?.Invoke(_persistentData);
     }
 
     private void Start()

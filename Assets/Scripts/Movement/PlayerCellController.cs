@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerMovementController : MovementController, IInitializePotentialDragHandler, IDragHandler, IEndDragHandler
+public class PlayerCellController : CellController, IInitializePotentialDragHandler, IDragHandler, IEndDragHandler
 {
     [SerializeField]
     private float _dragRadius;

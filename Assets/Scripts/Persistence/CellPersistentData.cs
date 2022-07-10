@@ -33,6 +33,5 @@ public class CellPersistentData
         DamageLevel = other.DamageLevel;
         ResistLevel = other.ResistLevel;
         HighScore = other.HighScore;
-
     }
 }

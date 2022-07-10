@@ -437,7 +437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1272463236
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,6 +1131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6457544342337955758, guid: 12f8a51543597024f9c8eb5c795ee797, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -3496957299580708993, guid: af3997e4875278d409597bb2a381873f, type: 3}
+    - target: {fileID: 7312092505361380017, guid: 12f8a51543597024f9c8eb5c795ee797, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7940433045510432779, guid: 12f8a51543597024f9c8eb5c795ee797, type: 3}
       propertyPath: m_LocalScale.x
       value: 89.43
@@ -1145,6 +1153,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7940433045510432779, guid: 12f8a51543597024f9c8eb5c795ee797, type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9113378080305697636, guid: 12f8a51543597024f9c8eb5c795ee797, type: 3}
+      propertyPath: m_ReceiveGI
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
